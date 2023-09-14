@@ -8,7 +8,7 @@ const products = [{id:1,name:'tomato'},{id:2,name:'potato'}]
 app.get('/', (req: Request, res: Response) =>{
     res.send('Hello Samurai')
 })
-app.get('/products', (req: Request, res: Response) =>{
+app.get('/', (req: Request, res: Response) =>{
     for (let i = 0; i < products.length; i++){
         if (products){
             res.send(products[i])
@@ -16,7 +16,7 @@ app.get('/products', (req: Request, res: Response) =>{
             res.send(404)
         }
     }
-    res.send('Hello Samurai')
+    res.send('My little baby')
 })
 
 
